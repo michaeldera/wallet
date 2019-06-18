@@ -1,0 +1,15 @@
+.input {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  padding:0.4rem;
+}
+.input:focus{
+  outline: none;
+  border-color: #08beef;
+}
+
+.input:active{
+  background-color: #08beef;
+}
