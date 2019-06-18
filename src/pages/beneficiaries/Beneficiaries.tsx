@@ -1,8 +1,13 @@
 import React from 'react';
+import Input from '../../components/input/Input';
 
 function Beneficiaries() {
   return (
-    <p>Beneficiaries</p>
+    <div>
+      <p>Beneficiaries</p>
+      <Input placeholder="Name" />
+    </div>
+
   );
 }
 

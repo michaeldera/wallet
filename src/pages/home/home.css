@@ -1,0 +1,12 @@
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #9ac;
+  margin: 0.8rem;
+  padding: 0.8rem;
+}
+
+.card-clear{
+  margin: 0.8rem;
+  padding: 0.8rem;
+}
