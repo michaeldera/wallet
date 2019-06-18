@@ -1,10 +1,11 @@
 import React from 'react';
+import Button from './components/button/Button';
 
 function App() {
   return (
     <div>
       <header>
-        <p>Hello World!</p>
+        <Button>Pay</Button>
       </header>
     </div>
   );

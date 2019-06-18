@@ -1,0 +1,16 @@
+.btn {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1rem;
+  padding:0.4rem 1rem;
+}
+.btn:focus{
+  outline: none;
+  border-color: #08beef;
+}
+
+.btn:active{
+  background-color: #08beef;
+  color: #fff;
+}
