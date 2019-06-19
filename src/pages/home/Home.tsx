@@ -12,6 +12,7 @@ function Home(props: any) {
         <p className="transaction-cost">Transaction Cost: $3.23</p>
       </header>
       <section className="card">
+        
         <Select>
           <option value="michael">Michael</option>
           <option value="zoey">Zoey</option>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../../components/input/Input';
+import Input from '../../components/input/input';
 
 function Beneficiaries() {
   return (
