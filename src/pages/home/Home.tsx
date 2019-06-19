@@ -7,12 +7,10 @@ import Button from '../../components/button/Button';
 function Home(props: any) {
   return (
     <div>
-      <header>
-        <span>$80</span>
+      <header>        
+        <span className="amount">$67.09</span>
+        <p className="transaction-cost">Transaction Cost: $3.23</p>
       </header>
-      <section className="card-clear">
-        Your transaction fee: $XXX.XX
-      </section>
       <section className="card">
         <Select>
           <option value="michael">Michael</option>
