@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import "./amountInput.css";
 
-function Input(props: any) {
+function AmountInput(props: any) {
   return (
-    <input className="input" type="number" placeholder={props.placeholder}/>
+    <Fragment>
+      <label>Amount</label>
+      <input className="input" type="number" placeholder={props.placeholder}/>
+    </Fragment>
+
   );
 }
 
-export default Input;
+export default AmountInput;
