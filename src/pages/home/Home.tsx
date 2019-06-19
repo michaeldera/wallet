@@ -2,6 +2,7 @@ import './home.css';
 import React from 'react';
 import Select from '../../components/select/Select';
 import Button from '../../components/button/Button';
+import AmountInput from '../../components/amountInput/amountInput';
 
 
 function Home(props: any) {
@@ -12,7 +13,7 @@ function Home(props: any) {
         <p className="transaction-cost">Transaction Cost: $3.23</p>
       </header>
       <section className="card">
-        
+        <AmountInput/>
         <Select>
           <option value="michael">Michael</option>
           <option value="zoey">Zoey</option>

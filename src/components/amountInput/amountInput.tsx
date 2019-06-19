@@ -4,8 +4,8 @@ import "./amountInput.css";
 function AmountInput(props: any) {
   return (
     <Fragment>
-      <label>Amount</label>
-      <input className="input" type="number" placeholder={props.placeholder}/>
+      <label className="amount-input-label">Amount</label>
+      <input className="amount-input" type="number" placeholder={props.placeholder}/>
     </Fragment>
 
   );

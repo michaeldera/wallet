@@ -1,15 +1,22 @@
-.input {
+.amount-input {
   border: 2px solid #aaa;
   border-radius: 4px;
+  display: block;
   font-family: 'Varela Round', sans-serif;
   font-size: 1rem;
+  margin: 0 auto 1rem;
   padding:0.4rem;
 }
-.input:focus{
+.amount-input:focus{
   outline: none;
   border-color: #08beef;
 }
 
-.input:active{
+.amount-input:active{
   background-color: #08beef;
+}
+
+.amount-input-label{
+  display: block;
+  font-size:0.8em;
 }
