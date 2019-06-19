@@ -1,4 +1,4 @@
-import React, { Fragment }, { Fragment } from 'react';
+import React from 'react';
 import "./input.css";
 
 function Input(props: any) {
