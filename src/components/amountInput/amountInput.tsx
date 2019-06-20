@@ -1,12 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import "./amountInput.css";
 
 function AmountInput(props: any) {
   return (
-    <Fragment>
+    <div className="amount-input-control">
       <label className="amount-input-label">Amount</label>
-      <input className="amount-input" type="number" placeholder={props.placeholder}/>
-    </Fragment>
+      <div>
+        <input className="amount-input" type="number" placeholder="100"/>
+      </div>
+    </div>
 
   );
 }

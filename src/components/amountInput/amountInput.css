@@ -1,22 +1,32 @@
-.amount-input {
-  border: 2px solid #aaa;
+.amount-input-control {
+  border: 2px solid #ccc;
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   display: block;
   font-family: 'Varela Round', sans-serif;
-  font-size: 1rem;
-  margin: 0 auto 1rem;
-  padding:0.4rem;
+  margin: 0 auto 1.2rem;
+  padding:0.4rem 0.6rem;
 }
-.amount-input:focus{
+.amount-input-control:focus{
   outline: none;
   border-color: #08beef;
 }
 
-.amount-input:active{
+.amount-input-control:active{
   background-color: #08beef;
 }
 
 .amount-input-label{
   display: block;
+  text-align:left;
   font-size:0.8em;
+  color: #aaa;
+}
+
+.amount-input{
+  border:none;
+  width: 100%;
+  outline: none;
+  font-size:1.6rem;
+  background:none;
 }
