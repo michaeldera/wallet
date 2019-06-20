@@ -6,6 +6,7 @@ function AmountInput(props: any) {
     <div className="amount-input-control">
       <label className="amount-input-label">Amount</label>
       <div>
+        <div className="amount-input-sym">$</div>
         <input className="amount-input" type="number" placeholder="100"/>
       </div>
     </div>

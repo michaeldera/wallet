@@ -1,9 +1,11 @@
 .btn {
-  border: 2px solid #aaa;
-  border-radius: 4px;
+  border: none;
+  background-color: #fcfdff;
+  color: #0025ff;
+  border-radius: 6px;
   font-family: 'Varela Round', sans-serif;
-  font-size: 1rem;
-  padding:0.4rem 1rem;
+  font-size: 1.2rem;
+  padding:0.6rem 1.6rem;
 }
 .btn:focus{
   outline: none;

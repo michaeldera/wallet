@@ -8,7 +8,7 @@ import AmountInput from '../../components/amountInput/amountInput';
 function Home(props: any) {
   return (
     <div>
-      <header>        
+      <header className="transaction-header">        
         <span className="amount">$67.09</span>
         <p className="transaction-cost">Transaction Cost: $3.23</p>
       </header>

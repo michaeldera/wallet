@@ -1,21 +1,19 @@
 .card {
-  border-radius: 8px;
-  box-shadow: 0 0 8px #ccc;
   margin: 0.8rem;
   padding: 0.8rem;
 }
 
-header{
+.transaction-header{
   margin: 0.8rem;
-  padding: 0.8rem;
+  padding: 3rem 0.8rem;
 }
 
 .amount{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.2rem;
-  color: #777;
+  font-size: 3.6rem;
+  color: #fff;
 }
 
 .transaction-cost{
   font-size: 0.8rem;
+  color: #8db6fe;
 }

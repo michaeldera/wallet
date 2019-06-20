@@ -1,6 +1,6 @@
 .amount-input-control {
-  border: 2px solid #ccc;
-  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   display: block;
   font-family: 'Varela Round', sans-serif;
@@ -15,18 +15,30 @@
 .amount-input-control:active{
   background-color: #08beef;
 }
-
+.amount-input-sym {
+  float: left;
+  font-size:1.6rem;
+  width:1.2rem;
+  color: #fcfdff;
+}
 .amount-input-label{
   display: block;
   text-align:left;
   font-size:0.8em;
-  color: #aaa;
+  color: #8db6fe;
 }
 
 .amount-input{
   border:none;
   width: 100%;
+  width: calc( 100% - 1.2rem);
   outline: none;
   font-size:1.6rem;
   background:none;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.amount-input::placeholder{
+  color: #8db6fe;
 }
