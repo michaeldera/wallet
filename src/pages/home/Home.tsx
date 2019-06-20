@@ -3,8 +3,7 @@ import React from 'react';
 import Select from '../../components/select/Select';
 import Button from '../../components/button/Button';
 import AmountInput from '../../components/amountInput/amountInput';
-import BeneficiariesLink from '../../components/links/links';
-
+import { Link } from 'react-router-dom';
 
 function Home(props: any) {
   return (
@@ -24,7 +23,7 @@ function Home(props: any) {
         <Button>Pay</Button>
       </section>
       <section>
-        <BeneficiariesLink/>
+        <Link className="home-link" to="/beneficiaries">View Beneficiaries</Link>
       </section>
     </div>
   );

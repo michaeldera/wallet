@@ -1,5 +1,5 @@
 .card {
-  margin: 0.8rem;
+  margin: 0.8rem 0.8rem 4rem;
   padding: 0.8rem;
 }
 
@@ -16,4 +16,13 @@
 .transaction-detail{
   font-size: 0.8rem;
   color: #8db6fe;
+}
+
+.home-link{
+  background-color: #8db6fe;
+  color:#275ffb;
+  font-size:.8rem;
+  border-radius: 50vh;
+  padding: 0.12rem 0.6rem;
+  text-decoration: none;
 }
