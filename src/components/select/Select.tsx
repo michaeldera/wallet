@@ -1,15 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import "./select.css";
 
 function Select(props: any) {
   return (
-    <Fragment>
+    <div className="select-input-control">
       <label className="select-label">Beneficiary</label>
-      <select className="select">
+      <select className="select-input">
         {props.children}
       </select>
-    </Fragment>
-
+    </div>
   );
 }
 
