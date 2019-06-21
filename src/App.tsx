@@ -27,8 +27,8 @@ export default class App extends React.Component<any, IAppState>{
     }
   }
 
-  handleAmountChange(){
-    alert("Handling Click");
+  handleAmountChange(e : any){
+    this.setState({ amount : e.target.value});
   }
 
   handlePayClick(){
