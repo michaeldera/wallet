@@ -14,7 +14,7 @@ function Home(props: any) {
         <p className="transaction-detail">Minimum Balance: {props.minimumBalance}</p>
       </header>
       <section className="card">
-        <AmountInput/>
+        <AmountInput handleAmountChange={props.handleAmountChange}/>
         <Select>
           { props.beneficiaries.map( 
             (s: any) => (
@@ -22,7 +22,7 @@ function Home(props: any) {
             )
           )}
         </Select>
-        <Button>Pay</Button>
+        <Button onClick={props.handlePayClick}>Pay</Button>
       </section>
       <section>
         <Link className="home-link" to="/beneficiaries">View Beneficiaries</Link>

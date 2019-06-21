@@ -13,6 +13,8 @@ interface IAppState {
 export default class App extends React.Component<any, IAppState>{
   constructor(props: any){
     super(props);
+    this.handleAmountChange = this.handleAmountChange.bind(this);
+    this.handlePayClick = this.handlePayClick.bind(this);
     this.state ={
       amount: 100, 
       transactionCost:1.06, 
@@ -23,12 +25,22 @@ export default class App extends React.Component<any, IAppState>{
       ]
     }
   }
+
+  handleAmountChange(){
+    alert("Handling Click");
+  }
+
+  handlePayClick(){
+    //window.location.href = shortCode
+    alert("Ready to pay");
+  }
+
   render() {
     const {amount, transactionCost, minimumBalance, beneficiaries} = this.state;
     return (
       <BrowserRouter>
         <Route path="/" exact component={() =>
-          <Home amount={amount} transactionCost={transactionCost} minimumBalance={minimumBalance} beneficiaries={beneficiaries} />}
+          <Home amount={amount} transactionCost={transactionCost} minimumBalance={minimumBalance} beneficiaries={beneficiaries} handleAmountChange={this.handleAmountChange} handlePayClick={this.handlePayClick} />}
         />
         <Route path="/beneficiaries/" component={() => <Beneficiaries beneficiaries={beneficiaries}/>} />
       </BrowserRouter>
