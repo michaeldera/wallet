@@ -16,9 +16,11 @@ function Home(props: any) {
       <section className="card">
         <AmountInput/>
         <Select>
-          <option value="michael">Michael</option>
-          <option value="zoey">Zoey</option>
-          <option value="add-person">Add Person</option>
+          { props.beneficiaries.map( 
+            (s: any) => (
+              <option value={s.code}>{s.name}</option>
+            )
+          )}
         </Select>
         <Button>Pay</Button>
       </section>

@@ -18,8 +18,8 @@ export default class App extends React.Component<any, IAppState>{
       transactionCost:1.06, 
       minimumBalance: 101.06, 
       beneficiaries: [
-        { name: "Michael", type: "Individual", mobileNumber: "0770000000"},
-        { name: "Contoso", type: "Merchant", mobileNumber: "123456" }
+        { name: "Michael", type: "Individual", code: "0770000000"},
+        { name: "Contoso", type: "Merchant", code: "123456" }
       ]
     }
   }
