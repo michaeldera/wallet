@@ -18,7 +18,7 @@ function Home(props: any) {
         <Select>
           { props.beneficiaries.map( 
             (s: any) => (
-              <option value={s.code}>{s.name}</option>
+              <option key={s.code} value={s.code}>{s.name}</option>
             )
           )}
         </Select>

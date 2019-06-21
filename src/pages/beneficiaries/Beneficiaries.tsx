@@ -6,7 +6,7 @@ function Beneficiaries(props: any) {
       <p>Beneficiaries</p>
       {props.beneficiaries.map(
         (s: any) => (
-          <li>{s.name} - {s.code}({s.type})</li>
+          <li key={s.code}>{s.name} - {s.code}({s.type})</li>
         )
       )}
     </div>
