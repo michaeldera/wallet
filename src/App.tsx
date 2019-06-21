@@ -30,7 +30,7 @@ export default class App extends React.Component<any, IAppState>{
         <Route path="/" exact component={() =>
           <Home amount={amount} transactionCost={transactionCost} minimumBalance={minimumBalance} beneficiaries={beneficiaries} />}
         />
-        <Route path="/beneficiaries/" component={() => <Beneficiaries />} />
+        <Route path="/beneficiaries/" component={() => <Beneficiaries beneficiaries={beneficiaries}/>} />
       </BrowserRouter>
     );
   }

@@ -1,11 +1,14 @@
 import React from 'react';
-import Input from '../../components/input/input';
 
-function Beneficiaries() {
+function Beneficiaries(props: any) {
   return (
     <div>
       <p>Beneficiaries</p>
-      <Input placeholder="Name" />
+      {props.beneficiaries.map(
+        (s: any) => (
+          <li>{s.name} - {s.code}({s.type})</li>
+        )
+      )}
     </div>
 
   );
