@@ -9,9 +9,9 @@ function Home(props: any) {
   return (
     <div>
       <header className="transaction-header">        
-        <span className="amount">$67.09</span>
-        <p className="transaction-detail">Transaction Cost: $3.23</p>
-        <p className="transaction-detail">Minimum Balance: $71.00</p>
+        <span className="amount">{props.amount}</span>
+        <p className="transaction-detail">Transaction Cost: {props.transactionCost}</p>
+        <p className="transaction-detail">Minimum Balance: {props.minimumBalance}</p>
       </header>
       <section className="card">
         <AmountInput/>
