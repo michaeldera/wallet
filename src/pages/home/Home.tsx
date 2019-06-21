@@ -15,7 +15,7 @@ function Home(props: any) {
       </header>
       <section className="card">
         <AmountInput handleAmountChange={props.handleAmountChange}/>
-        <Select>
+        <Select onChange={props.handleBeneficiaryChange}>
           { props.beneficiaries.map( 
             (s: any) => (
               <option key={s.code} value={s.code}>{s.name}</option>

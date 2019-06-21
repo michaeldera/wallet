@@ -5,7 +5,7 @@ function Select(props: any) {
   return (
     <div className="select-input-control">
       <label className="select-label">Beneficiary</label>
-      <select className="select-input">
+      <select onChange={props.onChange} className="select-input">
         {props.children}
       </select>
     </div>

@@ -14,6 +14,7 @@ export default class App extends React.Component<any, IAppState>{
   constructor(props: any){
     super(props);
     this.handleAmountChange = this.handleAmountChange.bind(this);
+    this.handleBeneficiaryChange = this.handleBeneficiaryChange.bind(this);
     this.handlePayClick = this.handlePayClick.bind(this);
     this.state ={
       amount: 100, 
@@ -35,12 +36,16 @@ export default class App extends React.Component<any, IAppState>{
     alert("Ready to pay");
   }
 
+  handleBeneficiaryChange(){
+    alert("Beneficiary Changed");
+  }
+
   render() {
     const {amount, transactionCost, minimumBalance, beneficiaries} = this.state;
     return (
       <BrowserRouter>
         <Route path="/" exact component={() =>
-          <Home amount={amount} transactionCost={transactionCost} minimumBalance={minimumBalance} beneficiaries={beneficiaries} handleAmountChange={this.handleAmountChange} handlePayClick={this.handlePayClick} />}
+          <Home amount={amount} transactionCost={transactionCost} minimumBalance={minimumBalance} beneficiaries={beneficiaries} handleAmountChange={this.handleAmountChange} handleBeneficiaryChange={this.handleBeneficiaryChange} handlePayClick={this.handlePayClick} />}
         />
         <Route path="/beneficiaries/" component={() => <Beneficiaries beneficiaries={beneficiaries}/>} />
       </BrowserRouter>
