@@ -6,6 +6,9 @@ import AmountInput from '../../components/amountInput/amountInput';
 import { Link } from 'react-router-dom';
 
 export default class Home extends React.Component<any, any> {
+  shouldComponentUpdate(nextProps: any, nextState: any){
+    return false;
+  }
   render() {
     return (
       <div>
