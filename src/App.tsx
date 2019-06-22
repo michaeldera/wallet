@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Beneficiaries from './pages/beneficiaries/Beneficiaries';
+import { calculateCharge } from './helpers/tariffCalculator';
 
 interface IAppState {
   amount: number;
@@ -26,9 +27,12 @@ export default class App extends React.Component<any, IAppState>{
       ]
     }
   }
-
+ 
   handleAmountChange(e : any){
-    this.setState({ amount : e.target.value});
+    this.setState({ 
+      amount : e.target.value,
+      transactionCost: calculateCharge(e.target.value)
+    });
   }
 
   handlePayClick(){
