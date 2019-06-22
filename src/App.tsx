@@ -43,10 +43,10 @@ export default class App extends React.Component<any, IAppState>{
   render() {
     return (
       <BrowserRouter>
-        <Route path="/" exact component={() =>
+        <Route path="/" exact render={() =>
           <Home amount={this.state.amount} transactionCost={this.state.transactionCost} minimumBalance={this.state.minimumBalance} beneficiaries={this.state.beneficiaries} handleAmountChange={this.handleAmountChange} handleBeneficiaryChange={this.handleBeneficiaryChange} handlePayClick={this.handlePayClick} />}
         />
-        <Route path="/beneficiaries/" component={() => <Beneficiaries beneficiaries={this.state.beneficiaries}/>} />
+        <Route path="/beneficiaries/" render={() => <Beneficiaries beneficiaries={this.state.beneficiaries}/>} />
       </BrowserRouter>
     );
   }
