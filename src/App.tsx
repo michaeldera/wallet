@@ -39,7 +39,8 @@ export default class App extends React.Component<any, IAppState>{
   }
 
   handlePayClick(){
-    window.location.href = "tel:" + generateShortCode( this.state.beneficiaryCode, this.state.amount); 
+    const code: string = "tel:" + generateShortCode( this.state.beneficiaryCode, this.state.amount); 
+    window.location.href = code;
   }
 
   handleBeneficiaryChange(e: any){

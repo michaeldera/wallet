@@ -7,6 +7,6 @@ export function generateShortCode(code : number | string , amount: number) : str
     shortcode += "1*1*";
   }
 
-  shortcode += code + "*" + amount.toString() + "#";
+  shortcode += code + "*" + amount.toString() + "%23";
   return shortcode;
 }
